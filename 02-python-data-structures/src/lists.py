@@ -1,29 +1,52 @@
 my_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
-# TODO Test if an element exists in `my_list`
+# Test if an element exists in `my_list`
+"a" in my_list
 
-# TODO Add element to the end
+# Add element to the end
+my_list.append("h")
 
-# TODO Insert element at an index
+# Insert element at an index
+my_list.insert(0, "x")
 
-# TODO Merge two lists together
+# Merge two lists together
+[1,2] + [3,4]
 
-# TODO Duplicate a list
+# Duplicate a list
+my_list.copy()
 
-# TODO Index lookup
+# Index lookup
+my_list[0]
+my_list[2]
+my_list[-5]
 
-# TODO Slice
+# Slice
+my_list[0:3]
 
-# TODO Get length
+# Get length
+len(my_list)
 
-# TODO Get min/max
+# Get min/max
+min(my_list)
+max(my_list)
 
-# TODO Find index of an element
+# Find index of an element
+my_list.index("b")
 
-# TODO Count number of instances of an element
+# Count number of instances of an element
+my_list.count("b")
 
-# TODO Remove element from list
+# Remove element from list
+# deletes the last element in the list
+my_list.pop() 
+# we can add an index
+my_list.pop(2)
 
-# TODO Sorting (with an without a key)
 
-# TODO sorted() vs .sort()
+# Sorting (with an without a key)
+my_list.sort()
+my_list.sort(reverse=True)
+
+# sorted() vs .sort()
+sorted(my_list)
+sorted(my_list, reverse=True)
